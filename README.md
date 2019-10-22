@@ -1,16 +1,15 @@
-<<<<<<< HEAD
 <p align="center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Starter for creating a Gatsby Theme workspace
+  Gatsby Theme Workspace for `gatsby-theme-ticketing-service`
 </h1>
 
 ```shell
-gatsby new my-theme https://github.com/gatsbyjs/gatsby-starter-theme-workspace
-cd my-theme
+gatsby new my-ticketing-service https://github.com/wesleylhandy/gatsby-ticketing-app-theme
+cd my-ticketing-service
 yarn workspace example develop
 ```
 
@@ -19,9 +18,12 @@ yarn workspace example develop
 ```shell
 .
 ├── README.md
-├── gatsby-theme-minimal
+├── gatsby-theme-ticketing-service
 │   ├── README.md
+│   ├── gatsby-browser.js
 │   ├── gatsby-config.js
+│   ├── gatsby-node.js
+│   ├── gatsby-ssr.js
 │   ├── index.js
 │   └── package.json
 ├── example
@@ -29,20 +31,19 @@ yarn workspace example develop
 │   ├── gatsby-config.js
 │   ├── package.json
 │   └── src
+├── LICENSE
+├── .gitignore
 ├── package.json
 └── yarn.lock
 
-3 directories, 10 files
+3 directories, 15 files
 ```
 
-### `gatsby-theme-minimal`
+### `gatsby-theme-ticketing-service`
 
-This directory is the theme package itself. You should rename this at
-some point to be `gatsby-theme-{my-theme-name}`. Also change the
-`package.json` name field and the corresponding dependency in the
-example directory's `package.json`/`gatsby-config.js` to match the chosen name.
+This directory is the theme package itself. 
 
-- `gatsby-theme-minimal/`
+- `gatsby-theme-ticketing-service/`
   - `gatsby-config.js`: An empty gatsby-config that you can use as a starting point for building functionality into your theme.
   - `index.js`: Since themes also function as plugins, this is an empty file that
     gatsby needs to use this theme as a plugin.
@@ -63,7 +64,3 @@ You can run the example with:
 ```shell
 yarn workspace example develop
 ```
-=======
-# gatsby-ticketing-app-theme
-A theme for multiplying sites for qr code ticketing systems
->>>>>>> b701b39991455f21685fa7be426a4396e03d9950
