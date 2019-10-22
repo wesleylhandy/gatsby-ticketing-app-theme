@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
@@ -62,3 +63,7 @@ You can run the example with:
 ```shell
 yarn workspace example develop
 ```
+=======
+# gatsby-ticketing-app-theme
+A theme for multiplying sites for qr code ticketing systems
+>>>>>>> b701b39991455f21685fa7be426a4396e03d9950
