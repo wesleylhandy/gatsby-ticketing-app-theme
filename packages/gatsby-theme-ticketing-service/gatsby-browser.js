@@ -1,18 +1,11 @@
-import React from 'react'
-import { ApolloProvider } from 'react-apollo'
-import ApolloClient from 'apollo-boost'
+import React from "react"
+import { IdentityContextProvider } from "react-netlify-identity-widget"
+import "react-netlify-identity-widget/styles.css"
 
-import getAuth, { appId } from './src/utils/og-auth'
-
-const client = new ApolloClient({
-  uri: `https://serve.onegraph.com/dynamic?app_id=${appId}`,
-  request: operation => operation.setContext({ headers: getAuth().authHeaders() })
-})
-
-export const wrapRootElement = ({ element }) => {
+export const wrapRootElement = ({ element }, options) => {
   return (
-    <ApolloProvider client={client}>
-      {element}
-    </ApolloProvider>
+      <IdentityContextProvider url={options.url}>
+          {element}
+      </IdentityContextProvider>
   )
 }

@@ -1,18 +1,14 @@
-require('dotenv').config({
-    path: `./.env.${process.env.NODE_ENV}`,
-})
-
-module.exports = {
-    siteMetadata: {},
-    plugins: [{
-        resolve: 'gatsby-source-graphql',
-        options: {
-            typeName: 'GitHub',
-            fieldName: 'github',
-            url: 'https://api.github.com/graphql',
-            headers: {
-                Authorization: `bearer ${process.env.GITHUB_API_TOKEN}`,
-            },
-        }
-    }]
+const withDefaults = require('./src/utils/default-options');
+module.exports = options => {
+    const { identityUrl, colors: { primary, secondary, tertiary } } = withDefaults(options)
+    return {
+        siteMetadata: {
+        },
+        plugins: [{
+            resolve: `gatsby-plugin-netlify-identity`,
+            options: {
+                url: identityUrl // required!
+            }
+        }],
+    }
 }

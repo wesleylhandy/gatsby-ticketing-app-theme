@@ -1,7 +1,7 @@
 {
-  "name": "example",
+  "name": "admin-example",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "gatsby-config.js",
   "author": "Wesley L. Handy <wesley@wearecreativ.media> (@wesleylhandy)",
   "license": "MIT",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "gatsby": "^2.16.1",
-    "gatsby-theme-ticketing-service": "^1.0.0",
+    "gatsby-theme-ticketing-service": "*",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
   }
