@@ -18,25 +18,53 @@ yarn workspace example develop
 ```shell
 .
 ├── README.md
-├── gatsby-theme-ticketing-service
-│   ├── README.md
-│   ├── gatsby-browser.js
-│   ├── gatsby-config.js
-│   ├── gatsby-node.js
-│   ├── gatsby-ssr.js
-│   ├── index.js
-│   └── package.json
-├── example
-│   ├── README.md
-│   ├── gatsby-config.js
-│   ├── package.json
-│   └── src
+├── packages
+│   ├── gatsby-theme-ticketing-service
+│   │   ├── README.md
+│   │   ├── gatsby-browser.js
+│   │   ├── gatsby-config.js
+│   │   ├── gatsby-node.js
+│   │   ├── gatsby-ssr.js
+│   │   ├── index.js
+│   │   └── package.json
+│   ├── gatsby-theme-ticketing-service-admin
+│   │   ├── README.md
+│   │   ├── gatsby-browser.js
+│   │   ├── gatsby-config.js
+│   │   ├── gatsby-node.js
+│   │   ├── gatsby-ssr.js
+│   │   ├── index.js
+│   │   └── package.json
+│   └── gatsby-theme-ticketing-service-attendant
+│       ├── README.md
+│       ├── gatsby-browser.js
+│       ├── gatsby-config.js
+│       ├── gatsby-node.js
+│       ├── gatsby-ssr.js
+│       ├── index.js
+│       └── package.json
+├── sites
+│   ├── admin-example
+│   │   ├── README.md
+│   │   ├── gatsby-config.js
+│   │   ├── package.json
+│   │   └── src
+│   ├── attendant-example
+│   │   ├── README.md
+│   │   ├── gatsby-config.js
+│   │   ├── package.json
+│   │   └── src
+│   └── customer-example
+│       ├── README.md
+│       ├── gatsby-config.js
+│       ├── package.json
+│       └── src
 ├── LICENSE
 ├── .gitignore
 ├── package.json
 └── yarn.lock
 
-3 directories, 15 files
+8 directories, 38 files
 ```
 
 ### `gatsby-theme-ticketing-service`
