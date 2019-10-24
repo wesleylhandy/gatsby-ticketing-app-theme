@@ -1,0 +1,21 @@
+{
+  "name": "ticketing-service-logon",
+  "version": "1.0.0",
+  "main": "gatsby-config.js",
+  "author": "Wesley L. Handy <wesley@wearecreativ.media> (@wesleylhandy)",
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build"
+  },
+  "dependencies": {
+    "cookie": "^0.4.0",
+    "gatsby": "^2.17.2",
+    "gatsby-theme-ticketing-service": "*",
+    "jsonwebtoken": "^8.5.1",
+    "node-fetch": "^2.6.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "url-parse": "^1.4.7"
+  }
+}

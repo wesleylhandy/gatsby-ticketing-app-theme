@@ -1,21 +1,23 @@
-import React from "react"
+import React from "react";
 import IdentityModal, {
-  useIdentityContext,
-} from "react-netlify-identity-widget"
+  useIdentityContext
+} from "react-netlify-identity-widget";
+import "react-netlify-identity-widget/styles.css";
+import "./widget-styles.css";
 // react SSR doesnt support suspense yet
 
 const Layout = ({ children }) => {
-  const identity = useIdentityContext()
-  const [dialog, setDialog] = React.useState(false)
+  const identity = useIdentityContext();
+  const [dialog, setDialog] = React.useState(false);
   const name =
     (identity &&
       identity.user &&
       identity.user.user_metadata &&
       identity.user.user_metadata.name) ||
-    "NoName"
+    "NoName";
 
-  console.log(JSON.stringify(identity))
-  const isLoggedIn = identity && identity.isLoggedIn
+  console.log(JSON.stringify(identity));
+  const isLoggedIn = identity && identity.isLoggedIn;
   return (
     <>
       <nav style={{ background: "green" }}>
@@ -31,7 +33,7 @@ const Layout = ({ children }) => {
         onCloseDialog={() => setDialog(false)}
       />
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

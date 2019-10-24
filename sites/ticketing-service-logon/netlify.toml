@@ -1,0 +1,8 @@
+[build]
+    publish = "ticketing-service-logon"
+    functions = "functions"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control= "no-cache, no-store, must-revalidate"
